@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>source: elections::Circonscription Class Reference</title>
+<title>My Project: elections::Circonscription Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">source
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">source</div>
   </td>
  </tr>
  </tbody>
@@ -105,6 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af75615063a01437d3052814a09df28c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelections_1_1_circonscription.html#af75615063a01437d3052814a09df28c4">desinscrire</a> (const std::string &amp;p_nas)</td></tr>
 <tr class="memdesc:af75615063a01437d3052814a09df28c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">desinscrit une personne deja presente dans la circonscription.  <a href="classelections_1_1_circonscription.html#af75615063a01437d3052814a09df28c4">More...</a><br /></td></tr>
 <tr class="separator:af75615063a01437d3052814a09df28c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ecc3de625f2898502f6cd20056bd2d9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelections_1_1_circonscription.html#a1ecc3de625f2898502f6cd20056bd2d9">reqPersonneSelection</a> (const std::string &amp;p_nom, const std::string &amp;p_prenom) const</td></tr>
+<tr class="memdesc:a1ecc3de625f2898502f6cd20056bd2d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne les détails formatés d'une personne spécifique inscrite dans la circonscription.  <a href="classelections_1_1_circonscription.html#a1ecc3de625f2898502f6cd20056bd2d9">More...</a><br /></td></tr>
+<tr class="separator:a1ecc3de625f2898502f6cd20056bd2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae337c92d62b3bb52c3252094067dd1fa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelections_1_1_circonscription.html#ae337c92d62b3bb52c3252094067dd1fa">reqCirconscriptionFormate</a> () const</td></tr>
 <tr class="memdesc:ae337c92d62b3bb52c3252094067dd1fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">methode qui formate et retourne une représentation textuelle complète d'une circonscription.  <a href="classelections_1_1_circonscription.html#ae337c92d62b3bb52c3252094067dd1fa">More...</a><br /></td></tr>
 <tr class="separator:ae337c92d62b3bb52c3252094067dd1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -345,6 +347,45 @@ Vérification de l'attribut m_deputeElu s'il contient le depute Elu de la circon
 
 <p>Méthode accesseur récupérant le nom de la circonscription. </p>
 <dl class="section return"><dt>Returns</dt><dd>le nom de la circonscription </dd></dl>
+
+</div>
+</div>
+<a id="a1ecc3de625f2898502f6cd20056bd2d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ecc3de625f2898502f6cd20056bd2d9">&#9670;&nbsp;</a></span>reqPersonneSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string elections::Circonscription::reqPersonneSelection </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>p_nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>p_prenom</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retourne les détails formatés d'une personne spécifique inscrite dans la circonscription. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_nom</td><td>Le nom de la personne recherchée. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_prenom</td><td>Le prénom de la personne recherchée. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Une chaîne de caractères contenant les informations formatées de la personne, ou une chaîne vide si aucune personne ne correspond.</dd></dl>
+<p>Cette méthode parcourt la liste des personnes inscrites dans la circonscription et retourne les informations de la première personne trouvée correspondant au nom et au prénom donnés. Les informations sont retournées dans un format déterminé par la méthode <code>reqPersonneFormate()</code> de la classe <code><a class="el" href="classelections_1_1_personne.html" title="Prototype de la classe Personne abstraite qui represente la classe base des classes derivees Candidat...">Personne</a></code>. </p>
 
 </div>
 </div>

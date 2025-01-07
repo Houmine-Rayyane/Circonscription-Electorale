@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = CirconscriptionGUI1.0.0
-DISTDIR = /home/etudiant/Desktop/TP3/tp3-integration-equipe10/CirconscriptionGUI/build/Debug/GNU-Linux/CirconscriptionGUI1.0.0
+DISTDIR = /home/etudiant/Desktop/Elections/CirconscriptionGUI/build/Debug/GNU-Linux/CirconscriptionGUI1.0.0
 LINK          = g++
 LFLAGS        = 
 LIBS          = $(SUBLIBS) ../source/dist/Debug/GNU-Linux/libsource.a /usr/lib/x86_64-linux-gnu/libQt5Widgets.so /usr/lib/x86_64-linux-gnu/libQt5Gui.so /usr/lib/x86_64-linux-gnu/libQt5Core.so -lGL -lpthread   
@@ -381,7 +381,7 @@ moc_AjoutCandidat.cpp: AjoutCandidat.h \
 		../source/validationFormat.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/etudiant/Desktop/TP3/tp3-integration-equipe10/CirconscriptionGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/etudiant/Desktop/TP3/tp3-integration-equipe10/CirconscriptionGUI/nbproject -I/home/etudiant/Desktop/TP3/tp3-integration-equipe10/CirconscriptionGUI/source -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include AjoutCandidat.h -o moc_AjoutCandidat.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/etudiant/Desktop/Elections/CirconscriptionGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/etudiant/Desktop/Elections/CirconscriptionGUI/nbproject -I/home/etudiant/Desktop/Elections/CirconscriptionGUI/source -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include AjoutCandidat.h -o moc_AjoutCandidat.cpp
 
 moc_AjoutElecteur.cpp: AjoutElecteur.h \
 		ui_AjoutElecteur.h \
@@ -389,7 +389,7 @@ moc_AjoutElecteur.cpp: AjoutElecteur.h \
 		../source/validationFormat.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/etudiant/Desktop/TP3/tp3-integration-equipe10/CirconscriptionGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/etudiant/Desktop/TP3/tp3-integration-equipe10/CirconscriptionGUI/nbproject -I/home/etudiant/Desktop/TP3/tp3-integration-equipe10/CirconscriptionGUI/source -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include AjoutElecteur.h -o moc_AjoutElecteur.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/etudiant/Desktop/Elections/CirconscriptionGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/etudiant/Desktop/Elections/CirconscriptionGUI/nbproject -I/home/etudiant/Desktop/Elections/CirconscriptionGUI/source -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include AjoutElecteur.h -o moc_AjoutElecteur.cpp
 
 moc_PersonneGUI.cpp: PersonneGUI.h \
 		ui_PersonneGUI.h \
@@ -401,13 +401,13 @@ moc_PersonneGUI.cpp: PersonneGUI.h \
 		../source/Electeur.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/etudiant/Desktop/TP3/tp3-integration-equipe10/CirconscriptionGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/etudiant/Desktop/TP3/tp3-integration-equipe10/CirconscriptionGUI/nbproject -I/home/etudiant/Desktop/TP3/tp3-integration-equipe10/CirconscriptionGUI/source -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include PersonneGUI.h -o moc_PersonneGUI.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/etudiant/Desktop/Elections/CirconscriptionGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/etudiant/Desktop/Elections/CirconscriptionGUI/nbproject -I/home/etudiant/Desktop/Elections/CirconscriptionGUI/source -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include PersonneGUI.h -o moc_PersonneGUI.cpp
 
 moc_SupprimerPersonne.cpp: SupprimerPersonne.h \
 		ui_SupprimerPersonne.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/etudiant/Desktop/TP3/tp3-integration-equipe10/CirconscriptionGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/etudiant/Desktop/TP3/tp3-integration-equipe10/CirconscriptionGUI/nbproject -I/home/etudiant/Desktop/TP3/tp3-integration-equipe10/CirconscriptionGUI/source -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include SupprimerPersonne.h -o moc_SupprimerPersonne.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/etudiant/Desktop/Elections/CirconscriptionGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/etudiant/Desktop/Elections/CirconscriptionGUI/nbproject -I/home/etudiant/Desktop/Elections/CirconscriptionGUI/source -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include SupprimerPersonne.h -o moc_SupprimerPersonne.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:

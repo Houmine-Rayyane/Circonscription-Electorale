@@ -28,6 +28,8 @@ void \mbox{\hyperlink{classelections_1_1_circonscription_a808d1495bfb8dda4bb7511
 \begin{DoxyCompactList}\small\item\em Inscrit une nouvelle personne dans la circonscription. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classelections_1_1_circonscription_af75615063a01437d3052814a09df28c4}{desinscrire}} (const std\+::string \&p\+\_\+nas)
 \begin{DoxyCompactList}\small\item\em desinscrit une personne deja presente dans la circonscription. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classelections_1_1_circonscription_a1ecc3de625f2898502f6cd20056bd2d9}{req\+Personne\+Selection}} (const std\+::string \&p\+\_\+nom, const std\+::string \&p\+\_\+prenom) const
+\begin{DoxyCompactList}\small\item\em Retourne les détails formatés d\textquotesingle{}une personne spécifique inscrite dans la circonscription. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classelections_1_1_circonscription_ae337c92d62b3bb52c3252094067dd1fa}{req\+Circonscription\+Formate}} () const
 \begin{DoxyCompactList}\small\item\em methode qui formate et retourne une représentation textuelle complète d\textquotesingle{}une circonscription. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -200,7 +202,27 @@ Méthode accesseur récupérant le nom de la circonscription.
 \begin{DoxyReturn}{Returns}
 le nom de la circonscription 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classelections_1_1_circonscription_a1ecc3de625f2898502f6cd20056bd2d9}\label{classelections_1_1_circonscription_a1ecc3de625f2898502f6cd20056bd2d9}} 
+\index{elections::Circonscription@{elections::Circonscription}!reqPersonneSelection@{reqPersonneSelection}}
+\index{reqPersonneSelection@{reqPersonneSelection}!elections::Circonscription@{elections::Circonscription}}
+\doxysubsubsection{\texorpdfstring{reqPersonneSelection()}{reqPersonneSelection()}}
+{\footnotesize\ttfamily std\+::string elections\+::\+Circonscription\+::req\+Personne\+Selection (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+nom,  }\item[{const std\+::string \&}]{p\+\_\+prenom }\end{DoxyParamCaption}) const}
 
+
+
+Retourne les détails formatés d\textquotesingle{}une personne spécifique inscrite dans la circonscription. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+nom} & Le nom de la personne recherchée. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+prenom} & Le prénom de la personne recherchée. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Une chaîne de caractères contenant les informations formatées de la personne, ou une chaîne vide si aucune personne ne correspond.
+\end{DoxyReturn}
+Cette méthode parcourt la liste des personnes inscrites dans la circonscription et retourne les informations de la première personne trouvée correspondant au nom et au prénom donnés. Les informations sont retournées dans un format déterminé par la méthode {\ttfamily req\+Personne\+Formate()} de la classe {\ttfamily \mbox{\hyperlink{classelections_1_1_personne}{Personne}}}. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

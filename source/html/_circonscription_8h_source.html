@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>source: Circonscription.h Source File</title>
+<title>My Project: Circonscription.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">source
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">source</div>
   </td>
  </tr>
  </tbody>
@@ -97,32 +96,34 @@ $(function() {
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classelections_1_1_circonscription.html#a808d1495bfb8dda4bb75114d3387d35b">inscrire</a> (<span class="keyword">const</span> <a class="code" href="classelections_1_1_personne.html">Personne</a>&amp; p_nouvelInscrit);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classelections_1_1_circonscription.html#af75615063a01437d3052814a09df28c4">desinscrire</a> (<span class="keyword">const</span> std::string&amp; p_nas);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::string <a class="code" href="classelections_1_1_circonscription.html#ae337c92d62b3bb52c3252094067dd1fa">reqCirconscriptionFormate</a> () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    std::string m_nomCirconscription;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classelections_1_1_candidat.html">Candidat</a> m_deputeElu;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::vector&lt;std::unique_ptr&lt;Personne&gt;&gt; m_inscrits;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> dejaInscrit (<span class="keyword">const</span> std::string&amp; p_nas) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> verifieInvariant () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  };</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CIRCONSCRIPTION_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::string <a class="code" href="classelections_1_1_circonscription.html#a1ecc3de625f2898502f6cd20056bd2d9">reqPersonneSelection</a>(<span class="keyword">const</span> std::string&amp; p_nom,<span class="keyword">const</span> std::string&amp; p_prenom)<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::string <a class="code" href="classelections_1_1_circonscription.html#ae337c92d62b3bb52c3252094067dd1fa">reqCirconscriptionFormate</a> () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::string m_nomCirconscription;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classelections_1_1_candidat.html">Candidat</a> m_deputeElu;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::vector&lt;std::unique_ptr&lt;Personne&gt;&gt; m_inscrits;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> personneEstDejaPresente (<span class="keyword">const</span> std::string&amp; p_nas) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> verifieInvariant () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CIRCONSCRIPTION_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="ttc" id="a_candidat_8h_html"><div class="ttname"><a href="_candidat_8h.html">Candidat.h</a></div><div class="ttdoc">déclarations de la classe Candidat.</div></div>
 <div class="ttc" id="a_personne_8h_html"><div class="ttname"><a href="_personne_8h.html">Personne.h</a></div><div class="ttdoc">déclarations de la classe Personne.</div></div>
 <div class="ttc" id="aclasselections_1_1_candidat_html"><div class="ttname"><a href="classelections_1_1_candidat.html">elections::Candidat</a></div><div class="ttdoc">Prototype de la classe Candidat qui represente les inforrmations liees au candidat dans un systeme de...</div><div class="ttdef"><b>Definition:</b> Candidat.h:40</div></div>
 <div class="ttc" id="aclasselections_1_1_circonscription_html"><div class="ttname"><a href="classelections_1_1_circonscription.html">elections::Circonscription</a></div><div class="ttdoc">Prototype de la classe Circonscripition qui permet de faire la gestion des listes electorales.</div><div class="ttdef"><b>Definition:</b> Circonscription.h:28</div></div>
 <div class="ttc" id="aclasselections_1_1_circonscription_html_a0f9bcf98f2843621a4c272c08dca3749"><div class="ttname"><a href="classelections_1_1_circonscription.html#a0f9bcf98f2843621a4c272c08dca3749">elections::Circonscription::reqNomCirconscription</a></div><div class="ttdeci">std::string reqNomCirconscription() const</div><div class="ttdoc">Méthode accesseur récupérant le nom de la circonscription.</div><div class="ttdef"><b>Definition:</b> Circonscription.cpp:74</div></div>
+<div class="ttc" id="aclasselections_1_1_circonscription_html_a1ecc3de625f2898502f6cd20056bd2d9"><div class="ttname"><a href="classelections_1_1_circonscription.html#a1ecc3de625f2898502f6cd20056bd2d9">elections::Circonscription::reqPersonneSelection</a></div><div class="ttdeci">std::string reqPersonneSelection(const std::string &amp;p_nom, const std::string &amp;p_prenom) const</div><div class="ttdoc">Retourne les détails formatés d'une personne spécifique inscrite dans la circonscription.</div><div class="ttdef"><b>Definition:</b> Circonscription.cpp:225</div></div>
 <div class="ttc" id="aclasselections_1_1_circonscription_html_a407f2e41705f160f1a73eda97d001955"><div class="ttname"><a href="classelections_1_1_circonscription.html#a407f2e41705f160f1a73eda97d001955">elections::Circonscription::operator=</a></div><div class="ttdeci">Circonscription &amp; operator=(const Circonscription &amp;p_circonscription)</div><div class="ttdoc">Opérateur d'assignation pour la classe Circonscription. Cet opérateur permet de copier les données d'...</div><div class="ttdef"><b>Definition:</b> Circonscription.cpp:109</div></div>
 <div class="ttc" id="aclasselections_1_1_circonscription_html_a808d1495bfb8dda4bb75114d3387d35b"><div class="ttname"><a href="classelections_1_1_circonscription.html#a808d1495bfb8dda4bb75114d3387d35b">elections::Circonscription::inscrire</a></div><div class="ttdeci">void inscrire(const Personne &amp;p_nouvelInscrit)</div><div class="ttdoc">Inscrit une nouvelle personne dans la circonscription.</div><div class="ttdef"><b>Definition:</b> Circonscription.cpp:136</div></div>
 <div class="ttc" id="aclasselections_1_1_circonscription_html_ab06462fedf4595ed2eabdc4c83246e8e"><div class="ttname"><a href="classelections_1_1_circonscription.html#ab06462fedf4595ed2eabdc4c83246e8e">elections::Circonscription::reqCompteurDePersonnes</a></div><div class="ttdeci">size_t reqCompteurDePersonnes() const</div><div class="ttdoc">Retourne le nombre d'inscrits dans la circonscription. Cette méthode renvoie la taille de la liste de...</div><div class="ttdef"><b>Definition:</b> Circonscription.cpp:96</div></div>
 <div class="ttc" id="aclasselections_1_1_circonscription_html_ac6970cb6a196c825755ec3e1d1fe178b"><div class="ttname"><a href="classelections_1_1_circonscription.html#ac6970cb6a196c825755ec3e1d1fe178b">elections::Circonscription::reqDeputeElu</a></div><div class="ttdeci">Candidat reqDeputeElu() const</div><div class="ttdoc">Méthode accesseur récupérant l'objet DeputeElu.</div><div class="ttdef"><b>Definition:</b> Circonscription.cpp:84</div></div>
-<div class="ttc" id="aclasselections_1_1_circonscription_html_ae337c92d62b3bb52c3252094067dd1fa"><div class="ttname"><a href="classelections_1_1_circonscription.html#ae337c92d62b3bb52c3252094067dd1fa">elections::Circonscription::reqCirconscriptionFormate</a></div><div class="ttdeci">std::string reqCirconscriptionFormate() const</div><div class="ttdoc">methode qui formate et retourne une représentation textuelle complète d'une circonscription.</div><div class="ttdef"><b>Definition:</b> Circonscription.cpp:184</div></div>
+<div class="ttc" id="aclasselections_1_1_circonscription_html_ae337c92d62b3bb52c3252094067dd1fa"><div class="ttname"><a href="classelections_1_1_circonscription.html#ae337c92d62b3bb52c3252094067dd1fa">elections::Circonscription::reqCirconscriptionFormate</a></div><div class="ttdeci">std::string reqCirconscriptionFormate() const</div><div class="ttdoc">methode qui formate et retourne une représentation textuelle complète d'une circonscription.</div><div class="ttdef"><b>Definition:</b> Circonscription.cpp:183</div></div>
 <div class="ttc" id="aclasselections_1_1_circonscription_html_af247b9a8f0a1f975c41aee3e8c962e78"><div class="ttname"><a href="classelections_1_1_circonscription.html#af247b9a8f0a1f975c41aee3e8c962e78">elections::Circonscription::Circonscription</a></div><div class="ttdeci">Circonscription(const std::string &amp;p_nomCirconscription, Candidat &amp;p_deputeElu)</div><div class="ttdoc">Constructeur avec parametre. On construit un objet Circonscriptrion à partir des valeurs passées en p...</div><div class="ttdef"><b>Definition:</b> Circonscription.cpp:34</div></div>
-<div class="ttc" id="aclasselections_1_1_circonscription_html_af75615063a01437d3052814a09df28c4"><div class="ttname"><a href="classelections_1_1_circonscription.html#af75615063a01437d3052814a09df28c4">elections::Circonscription::desinscrire</a></div><div class="ttdeci">void desinscrire(const std::string &amp;p_nas)</div><div class="ttdoc">desinscrit une personne deja presente dans la circonscription.</div><div class="ttdef"><b>Definition:</b> Circonscription.cpp:157</div></div>
+<div class="ttc" id="aclasselections_1_1_circonscription_html_af75615063a01437d3052814a09df28c4"><div class="ttname"><a href="classelections_1_1_circonscription.html#af75615063a01437d3052814a09df28c4">elections::Circonscription::desinscrire</a></div><div class="ttdeci">void desinscrire(const std::string &amp;p_nas)</div><div class="ttdoc">desinscrit une personne deja presente dans la circonscription.</div><div class="ttdef"><b>Definition:</b> Circonscription.cpp:156</div></div>
 <div class="ttc" id="aclasselections_1_1_personne_html"><div class="ttname"><a href="classelections_1_1_personne.html">elections::Personne</a></div><div class="ttdoc">Prototype de la classe Personne abstraite qui represente la classe base des classes derivees Candidat...</div><div class="ttdef"><b>Definition:</b> Personne.h:30</div></div>
 <div class="ttc" id="anamespaceelections_html"><div class="ttname"><a href="namespaceelections.html">elections</a></div><div class="ttdoc">Ce namespace contient toutes les classes demandees pour ce Tp2 Candidat , Personne ,...</div><div class="ttdef"><b>Definition:</b> Candidat.cpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -4,6 +4,9 @@ var searchData=
   ['personne_31',['Personne',['../classelections_1_1_personne.html',1,'elections::Personne'],['../classelections_1_1_personne.html#a933d31fb34eb53c8d080820321e3a6e5',1,'elections::Personne::Personne()']]],
   ['personne_2ecpp_32',['Personne.cpp',['../_personne_8cpp.html',1,'']]],
   ['personne_2eh_33',['Personne.h',['../_personne_8h.html',1,'']]],
-  ['postconditionexception_34',['PostconditionException',['../class_postcondition_exception.html',1,'PostconditionException'],['../class_postcondition_exception.html#a80acc8c062304f1f01ddb11243bac66c',1,'PostconditionException::PostconditionException()']]],
-  ['preconditionexception_35',['PreconditionException',['../class_precondition_exception.html',1,'PreconditionException'],['../class_precondition_exception.html#a176eed9bc17fc18d906e1c229ca17a58',1,'PreconditionException::PreconditionException()']]]
+  ['personneabsenteexception_34',['PersonneAbsenteException',['../classelections_1_1_personne_absente_exception.html',1,'elections']]],
+  ['personnedejapresenteexception_35',['PersonneDejaPresenteException',['../classelections_1_1_personne_deja_presente_exception.html',1,'elections']]],
+  ['personneexception_36',['PersonneException',['../classelections_1_1_personne_exception.html',1,'elections']]],
+  ['postconditionexception_37',['PostconditionException',['../class_postcondition_exception.html',1,'PostconditionException'],['../class_postcondition_exception.html#a80acc8c062304f1f01ddb11243bac66c',1,'PostconditionException::PostconditionException()']]],
+  ['preconditionexception_38',['PreconditionException',['../class_precondition_exception.html',1,'PreconditionException'],['../class_precondition_exception.html#a176eed9bc17fc18d906e1c229ca17a58',1,'PreconditionException::PreconditionException()']]]
 ];
