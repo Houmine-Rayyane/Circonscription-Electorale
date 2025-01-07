@@ -97,7 +97,7 @@ Une fois la compilation terminée, exécutez le projet en cliquant sur Run Proje
 
 ### Démonstration Vidéo
 
-Regardez la démonstration complète du projet ici : [Vidéo YouTube]((https://youtu.be/_ykolxQODEc?si=imch2jmqlFKR4UkD))
+Regardez la démonstration complète du projet ici : [Vidéo YouTube](https://youtu.be/_ykolxQODEc?si=imch2jmqlFKR4UkD)
 
 
 
