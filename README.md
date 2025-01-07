@@ -96,8 +96,9 @@ Le projet est organisé en deux principaux dossiers :
 Une fois la compilation terminée, exécutez le projet en cliquant sur Run Project dans le fichier main.cpp du projet CirconscriptionGUI
 
 ### Exemple d'utilisation 
-![Aperçu vidéo]("/home/etudiant/Desktop/Elections/Election.png")
-[Cliquez ici pour voir la vidéo]("/home/etudiant/Desktop/Elections/Elections.mp4")
+[Voir la démonstration](./Elections.mp4)
+
+
 
 
 ## Conclusion
