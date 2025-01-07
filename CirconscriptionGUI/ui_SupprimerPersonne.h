@@ -50,7 +50,7 @@ public:
     {
         SupprimerPersonne->setWindowTitle(QCoreApplication::translate("SupprimerPersonne", "SupprimerPersonne", nullptr));
         label->setText(QCoreApplication::translate("SupprimerPersonne", "Veuillez entrer le Nas de la personne a supprimer", nullptr));
-        ok->setText(QCoreApplication::translate("SupprimerPersonne", "OK", nullptr));
+        ok->setText(QCoreApplication::translate("SupprimerPersonne", "Supprimer", nullptr));
     } // retranslateUi
 
 };

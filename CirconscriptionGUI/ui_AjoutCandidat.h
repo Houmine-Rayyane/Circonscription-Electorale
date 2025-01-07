@@ -17,6 +17,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpinBox>
+#include <QtWidgets/QTextEdit>
 
 QT_BEGIN_NAMESPACE
 
@@ -36,51 +37,55 @@ public:
     QLabel *label_6;
     QSpinBox *parti;
     QPushButton *ok;
+    QTextEdit *textEdit;
 
     void setupUi(QDialog *AjoutCandidat)
     {
         if (AjoutCandidat->objectName().isEmpty())
             AjoutCandidat->setObjectName(QString::fromUtf8("AjoutCandidat"));
-        AjoutCandidat->resize(841, 695);
+        AjoutCandidat->resize(488, 731);
         label = new QLabel(AjoutCandidat);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(80, 50, 91, 31));
+        label->setGeometry(QRect(40, 70, 91, 31));
         nom = new QLineEdit(AjoutCandidat);
         nom->setObjectName(QString::fromUtf8("nom"));
-        nom->setGeometry(QRect(200, 50, 431, 28));
+        nom->setGeometry(QRect(40, 110, 431, 28));
         label_2 = new QLabel(AjoutCandidat);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(80, 130, 81, 21));
+        label_2->setGeometry(QRect(40, 150, 81, 21));
         prenom = new QLineEdit(AjoutCandidat);
         prenom->setObjectName(QString::fromUtf8("prenom"));
-        prenom->setGeometry(QRect(200, 120, 431, 28));
+        prenom->setGeometry(QRect(40, 180, 431, 28));
         label_3 = new QLabel(AjoutCandidat);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(50, 340, 121, 20));
+        label_3->setGeometry(QRect(40, 360, 121, 20));
         dateN = new QCalendarWidget(AjoutCandidat);
         dateN->setObjectName(QString::fromUtf8("dateN"));
-        dateN->setGeometry(QRect(200, 320, 431, 211));
+        dateN->setGeometry(QRect(40, 390, 431, 201));
         label_4 = new QLabel(AjoutCandidat);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(70, 270, 71, 21));
+        label_4->setGeometry(QRect(40, 290, 71, 21));
         nas = new QLineEdit(AjoutCandidat);
         nas->setObjectName(QString::fromUtf8("nas"));
-        nas->setGeometry(QRect(200, 190, 431, 28));
+        nas->setGeometry(QRect(40, 250, 431, 28));
         label_5 = new QLabel(AjoutCandidat);
         label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(10, 200, 181, 16));
+        label_5->setGeometry(QRect(40, 220, 371, 16));
         adresse = new QLineEdit(AjoutCandidat);
         adresse->setObjectName(QString::fromUtf8("adresse"));
-        adresse->setGeometry(QRect(200, 260, 431, 28));
+        adresse->setGeometry(QRect(40, 320, 431, 28));
         label_6 = new QLabel(AjoutCandidat);
         label_6->setObjectName(QString::fromUtf8("label_6"));
-        label_6->setGeometry(QRect(60, 570, 101, 31));
+        label_6->setGeometry(QRect(50, 600, 101, 31));
         parti = new QSpinBox(AjoutCandidat);
         parti->setObjectName(QString::fromUtf8("parti"));
-        parti->setGeometry(QRect(200, 570, 42, 26));
+        parti->setGeometry(QRect(80, 640, 101, 26));
         ok = new QPushButton(AjoutCandidat);
         ok->setObjectName(QString::fromUtf8("ok"));
-        ok->setGeometry(QRect(330, 650, 90, 28));
+        ok->setGeometry(QRect(190, 690, 90, 28));
+        textEdit = new QTextEdit(AjoutCandidat);
+        textEdit->setObjectName(QString::fromUtf8("textEdit"));
+        textEdit->setGeometry(QRect(90, 20, 231, 31));
 
         retranslateUi(AjoutCandidat);
         QObject::connect(ok, SIGNAL(clicked()), AjoutCandidat, SLOT(validationCandidat()));
@@ -91,13 +96,18 @@ public:
     void retranslateUi(QDialog *AjoutCandidat)
     {
         AjoutCandidat->setWindowTitle(QCoreApplication::translate("AjoutCandidat", "AjoutCandidat", nullptr));
-        label->setText(QCoreApplication::translate("AjoutCandidat", "Nom :", nullptr));
-        label_2->setText(QCoreApplication::translate("AjoutCandidat", "Prenom : ", nullptr));
-        label_3->setText(QCoreApplication::translate("AjoutCandidat", "Date de naissance :", nullptr));
-        label_4->setText(QCoreApplication::translate("AjoutCandidat", "Adresse : ", nullptr));
-        label_5->setText(QCoreApplication::translate("AjoutCandidat", "Numero d'assurance sociale : ", nullptr));
-        label_6->setText(QCoreApplication::translate("AjoutCandidat", "Parti Politique :", nullptr));
-        ok->setText(QCoreApplication::translate("AjoutCandidat", "OK", nullptr));
+        label->setText(QCoreApplication::translate("AjoutCandidat", "Nom ", nullptr));
+        label_2->setText(QCoreApplication::translate("AjoutCandidat", "Prenom ", nullptr));
+        label_3->setText(QCoreApplication::translate("AjoutCandidat", "Date de naissance ", nullptr));
+        label_4->setText(QCoreApplication::translate("AjoutCandidat", "Adresse ", nullptr));
+        label_5->setText(QCoreApplication::translate("AjoutCandidat", "Numero d'assurance sociale [ex : XXX XXX XXX]", nullptr));
+        label_6->setText(QCoreApplication::translate("AjoutCandidat", "Parti Politique", nullptr));
+        ok->setText(QCoreApplication::translate("AjoutCandidat", "Ajouter ", nullptr));
+        textEdit->setHtml(QCoreApplication::translate("AjoutCandidat", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; font-weight:600; text-decoration: underline;\">Inscrire un Candidat </span></p></body></html>", nullptr));
     } // retranslateUi
 
 };

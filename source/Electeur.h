@@ -31,6 +31,7 @@ public:
             const std::string& p_nom, const std::string& p_adresse,
             const util::Date& p_dateNaissance);
   
+ 
   virtual std::unique_ptr < Personne > clone() const;
   virtual std::string reqPersonneFormate ()const;
 };

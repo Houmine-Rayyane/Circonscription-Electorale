@@ -143,7 +143,6 @@ namespace elections
       }
   }
 
-//Non demandee dans le cadre du tp
   /**
    * \brief desinscrit une personne deja presente dans la circonscription.
    * 
@@ -209,6 +208,19 @@ namespace elections
   }
 
   
+/**
+ * \brief Retourne les détails formatés d'une personne spécifique inscrite dans la circonscription.
+ * \param[in] p_nom Le nom de la personne recherchée.
+ * \param[in] p_prenom Le prénom de la personne recherchée.
+ * \return Une chaîne de caractères contenant les informations formatées de la personne,
+ *         ou une chaîne vide si aucune personne ne correspond.
+ *
+ * Cette méthode parcourt la liste des personnes inscrites dans la circonscription et
+ * retourne les informations de la première personne trouvée correspondant au nom et
+ * au prénom donnés. Les informations sont retournées dans un format déterminé par
+ * la méthode `reqPersonneFormate()` de la classe `Personne`.
+ */
+
 std::string 
 Circonscription::reqPersonneSelection(const std::string& p_nom,const std::string& p_prenom)const
   {
@@ -244,4 +256,8 @@ Circonscription::reqPersonneSelection(const std::string& p_nom,const std::string
     return dejainscrit;
   }
 
-}
+ 
+}//namespace elections
+
+
+

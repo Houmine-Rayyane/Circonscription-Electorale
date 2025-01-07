@@ -1,6 +1,6 @@
 /*
  * File:   main.cpp
- * Author: Rayyane Houmine & Hassan Alaoui
+ * Author: Rayyane Houmine 
  *
  * Created on 3 décembre 2024, 00 h 49
  */

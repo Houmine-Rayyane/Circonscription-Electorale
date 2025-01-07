@@ -49,7 +49,7 @@ public:
   ~Personne ();
 
   virtual std::unique_ptr<Personne> clone() const=0;
-
+  
   virtual std::string reqPersonneFormate ()const;
 
 private:

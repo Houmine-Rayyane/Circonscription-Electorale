@@ -1,6 +1,6 @@
 /*
  * File:   AjoutElecteur.cpp
- * Author: Rayyane Houmine & Hassan Alaoui
+ * Author: Rayyane Houmine 
  *
  * Created on December 3, 2024, 3:28 AM
  */

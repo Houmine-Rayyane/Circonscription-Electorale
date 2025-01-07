@@ -46,7 +46,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>OK</string>
+    <string>Supprimer</string>
    </property>
   </widget>
  </widget>

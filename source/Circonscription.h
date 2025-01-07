@@ -44,7 +44,7 @@ class Circonscription
     
     void inscrire (const Personne& p_nouvelInscrit);
     void desinscrire (const std::string& p_nas);
-    
+        
     std::string reqPersonneSelection(const std::string& p_nom,const std::string& p_prenom)const;
     std::string reqCirconscriptionFormate () const;
 

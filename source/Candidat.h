@@ -47,6 +47,8 @@ public:
   //Accesseur
   int reqPartiPolitique () const;
   
+
+
   std::string reqStringParti() const;
   virtual std::unique_ptr <Personne> clone () const;
   

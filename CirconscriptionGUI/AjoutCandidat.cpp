@@ -1,6 +1,6 @@
 /*
  * File:   AjoutCandidat.cpp
- * Author: Rayyane Houmine & Hassan Alaoui
+ * Author: Rayyane Houmine 
  *
  * Created on 3 décembre 2024, 01 h 36
  */

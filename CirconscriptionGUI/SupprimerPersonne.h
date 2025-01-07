@@ -1,6 +1,6 @@
 /* 
  * File:   SupprimerPersonne.h
- * Author: Rayyane Houmine & Hassan Alaoui
+ * Author: Rayyane Houmine 
  *
  * Created on 3 décembre 2024, 05 h 00
  */
