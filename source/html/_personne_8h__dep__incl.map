@@ -1,0 +1,9 @@
+<map id="Personne.h" name="Personne.h">
+<area shape="rect" id="node1" title="déclarations de la classe Personne." alt="" coords="142,5,236,32"/>
+<area shape="rect" id="node2" href="$_candidat_8h.html" title="déclarations de la classe Candidat." alt="" coords="8,80,100,107"/>
+<area shape="rect" id="node3" href="$_circonscription_8cpp.html" title="Implementations de la classe Circonscription." alt="" coords="13,229,160,256"/>
+<area shape="rect" id="node4" href="$_circonscription_8h.html" title="déclarations de la classe Circonscription." alt="" coords="21,155,152,181"/>
+<area shape="rect" id="node5" href="$_electeur_8h.html" title="déclarations de la classe Electeur." alt="" coords="227,80,314,107"/>
+<area shape="rect" id="node7" href="$_personne_8cpp.html" title="Implementatoion de la classe Personne." alt="" coords="338,80,448,107"/>
+<area shape="rect" id="node6" href="$_electeur_8cpp.html" title="Implementations de la classe Electeur." alt="" coords="226,155,328,181"/>
+</map>

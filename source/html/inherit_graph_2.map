@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classelections_1_1_personne.html" title="Prototype de la classe Personne abstraite qui represente la classe base des classes derivees Candidat..." alt="" coords="5,31,155,57"/>
+<area shape="rect" id="node2" href="$classelections_1_1_candidat.html" title="Prototype de la classe Candidat qui represente les inforrmations liees au candidat dans un systeme de..." alt="" coords="203,5,349,32"/>
+<area shape="rect" id="node3" href="$classelections_1_1_electeur.html" title="Prototype de la classe Electeur qui represente les informations liees a l&#39;electeur dans un systeme de..." alt="" coords="205,56,347,83"/>
+</map>

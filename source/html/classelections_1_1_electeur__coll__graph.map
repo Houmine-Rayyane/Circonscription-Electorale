@@ -1,0 +1,4 @@
+<map id="elections::Electeur" name="elections::Electeur">
+<area shape="rect" id="node1" title="Prototype de la classe Electeur qui represente les informations liees a l&#39;electeur dans un systeme de..." alt="" coords="9,80,151,107"/>
+<area shape="rect" id="node2" href="$classelections_1_1_personne.html" title="Prototype de la classe Personne abstraite qui represente la classe base des classes derivees Candidat..." alt="" coords="5,5,155,32"/>
+</map>

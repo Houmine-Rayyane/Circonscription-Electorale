@@ -1,0 +1,122 @@
+\hypertarget{classelections_1_1_electeur}{}\doxysection{elections\+::Electeur Class Reference}
+\label{classelections_1_1_electeur}\index{elections::Electeur@{elections::Electeur}}
+
+
+Prototype de la classe \mbox{\hyperlink{classelections_1_1_electeur}{Electeur}} qui represente les informations liees a l\textquotesingle{}electeur dans un systeme de gestion de circonscriptions electorales. Elle herite de la classe \mbox{\hyperlink{classelections_1_1_personne}{Personne}}.  
+
+
+
+
+{\ttfamily \#include $<$Electeur.\+h$>$}
+
+
+
+Inheritance diagram for elections\+::Electeur\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classelections_1_1_electeur__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for elections\+::Electeur\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classelections_1_1_electeur__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classelections_1_1_electeur_a29dbd5102c1f34eac65cde387b2b1f97}{Electeur}} (const std\+::string \&p\+\_\+nas, const std\+::string \&p\+\_\+prenom, const std\+::string \&p\+\_\+nom, const std\+::string \&p\+\_\+adresse, const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}} \&p\+\_\+date\+Naissance)
+\begin{DoxyCompactList}\small\item\em Constructeur avec parametre. On construit un objet \mbox{\hyperlink{classelections_1_1_electeur}{Electeur}} à partir des valeurs passées en paramètres. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classelections_1_1_personne}{Personne}} $>$ \mbox{\hyperlink{classelections_1_1_electeur_ae7ba88e24fb7a3a6334813bb43aa98dc}{clone}} () const
+\begin{DoxyCompactList}\small\item\em Crée une copie (clone) de l\textquotesingle{}objet {\ttfamily \mbox{\hyperlink{classelections_1_1_electeur}{Electeur}}} actuel. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classelections_1_1_electeur_a5b9aff638823b706c7e9b49af02125ed}{req\+Personne\+Formate}} () const
+\begin{DoxyCompactList}\small\item\em methode qui formate et retourne une représentation textuelle complète d\textquotesingle{}un electeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Prototype de la classe \mbox{\hyperlink{classelections_1_1_electeur}{Electeur}} qui represente les informations liees a l\textquotesingle{}electeur dans un systeme de gestion de circonscriptions electorales. Elle herite de la classe \mbox{\hyperlink{classelections_1_1_personne}{Personne}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classelections_1_1_electeur_a29dbd5102c1f34eac65cde387b2b1f97}\label{classelections_1_1_electeur_a29dbd5102c1f34eac65cde387b2b1f97}} 
+\index{elections::Electeur@{elections::Electeur}!Electeur@{Electeur}}
+\index{Electeur@{Electeur}!elections::Electeur@{elections::Electeur}}
+\doxysubsubsection{\texorpdfstring{Electeur()}{Electeur()}}
+{\footnotesize\ttfamily elections\+::\+Electeur\+::\+Electeur (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+nas,  }\item[{const std\+::string \&}]{p\+\_\+prenom,  }\item[{const std\+::string \&}]{p\+\_\+nom,  }\item[{const std\+::string \&}]{p\+\_\+adresse,  }\item[{const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}} \&}]{p\+\_\+date\+Naissance }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec parametre. On construit un objet \mbox{\hyperlink{classelections_1_1_electeur}{Electeur}} à partir des valeurs passées en paramètres. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+nas,Le} & numero d\textquotesingle{}assurance sociale de l\textquotesingle{}electeur ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+prenom,le} & prenom de l\textquotesingle{}electeur \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+nom,le} & nom de l\textquotesingle{}electeur \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+adresse,l\textquotesingle{}adresse} & de l\textquotesingle{}electeur \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+date\+Naissance,la} & date de naissance de l\textquotesingle{}electeur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un objet \mbox{\hyperlink{classelections_1_1_personne}{Personne}} 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\+: Ce constructeur utilise le constructeur de la classe \mbox{\hyperlink{classelections_1_1_personne}{Personne}} pour faire sa liste d\textquotesingle{}initialisation 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classelections_1_1_electeur_ae7ba88e24fb7a3a6334813bb43aa98dc}\label{classelections_1_1_electeur_ae7ba88e24fb7a3a6334813bb43aa98dc}} 
+\index{elections::Electeur@{elections::Electeur}!clone@{clone}}
+\index{clone@{clone}!elections::Electeur@{elections::Electeur}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classelections_1_1_personne}{Personne}} $>$ elections\+::\+Electeur\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Crée une copie (clone) de l\textquotesingle{}objet {\ttfamily \mbox{\hyperlink{classelections_1_1_electeur}{Electeur}}} actuel. 
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$\+Personne$>$ Un pointeur unique vers un nouvel objet {\ttfamily \mbox{\hyperlink{classelections_1_1_electeur}{Electeur}}} qui est une copie de l\textquotesingle{}objet actuel. Ce pointeur est géré automatiquement par {\ttfamily std\+::unique\+\_\+ptr}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classelections_1_1_personne}{elections\+::\+Personne}}.
+
+\mbox{\Hypertarget{classelections_1_1_electeur_a5b9aff638823b706c7e9b49af02125ed}\label{classelections_1_1_electeur_a5b9aff638823b706c7e9b49af02125ed}} 
+\index{elections::Electeur@{elections::Electeur}!reqPersonneFormate@{reqPersonneFormate}}
+\index{reqPersonneFormate@{reqPersonneFormate}!elections::Electeur@{elections::Electeur}}
+\doxysubsubsection{\texorpdfstring{reqPersonneFormate()}{reqPersonneFormate()}}
+{\footnotesize\ttfamily std\+::string elections\+::\+Electeur\+::req\+Personne\+Formate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+methode qui formate et retourne une représentation textuelle complète d\textquotesingle{}un electeur. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string Une chaîne de caractères contenant les informations formatées du electeur 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\+: Cette methode est une augmentation de la methode \mbox{\hyperlink{classelections_1_1_electeur_a5b9aff638823b706c7e9b49af02125ed}{req\+Personne\+Formate()}} de la classe \mbox{\hyperlink{classelections_1_1_personne}{Personne}} 
+\end{DoxyNote}
+
+
+Reimplemented from \mbox{\hyperlink{classelections_1_1_personne_a1ad30c9ff47334fbe8655c021f901f8e}{elections\+::\+Personne}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_electeur_8h}{Electeur.\+h}}\item 
+\mbox{\hyperlink{_electeur_8cpp}{Electeur.\+cpp}}\end{DoxyCompactItemize}

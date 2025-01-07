@@ -1,0 +1,157 @@
+\hypertarget{classelections_1_1_candidat}{}\doxysection{elections\+::Candidat Class Reference}
+\label{classelections_1_1_candidat}\index{elections::Candidat@{elections::Candidat}}
+
+
+Prototype de la classe \mbox{\hyperlink{classelections_1_1_candidat}{Candidat}} qui represente les inforrmations liees au candidat dans un systeme de gestion de circonscriptions electorales. Elle herite de la classe \mbox{\hyperlink{classelections_1_1_personne}{Personne}} mais ajoute la fonctionnalite de l\textquotesingle{}affiliation politique.  
+
+
+
+
+{\ttfamily \#include $<$Candidat.\+h$>$}
+
+
+
+Inheritance diagram for elections\+::Candidat\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classelections_1_1_candidat__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for elections\+::Candidat\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classelections_1_1_candidat__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classelections_1_1_candidat_a8bf9b6205279a9ec02eca2a59f6d24b1}{Candidat}} (const std\+::string \&p\+\_\+nas, const std\+::string \&p\+\_\+prenom, const std\+::string \&p\+\_\+nom, const std\+::string \&p\+\_\+adresse, const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}} \&p\+\_\+date\+Naissance, int p\+\_\+parti\+Politique)
+\begin{DoxyCompactList}\small\item\em Constructeur avec parametre. On construit un objet \mbox{\hyperlink{classelections_1_1_candidat}{Candidat}} à partir des valeurs passées en paramètres. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classelections_1_1_candidat_a150b2e680fbea708f222e5e8bfd823e4}{req\+Parti\+Politique}} () const
+\begin{DoxyCompactList}\small\item\em Méthode accesseur récupérant la parti politique du candidat. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classelections_1_1_candidat_a8b7a1700d8d8ae8e5c80f9c25fff976f}{req\+String\+Parti}} () const
+\begin{DoxyCompactList}\small\item\em Methode qui retourne le nom du parti politique du candidat sous forme de chaîne de caractères. Cette fonction utilise l\textquotesingle{}attribut {\ttfamily m\+\_\+parti\+Politique} pour déterminer le nom du parti auquel le candidat appartient et retourne la chaîne correspondante. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classelections_1_1_personne}{Personne}} $>$ \mbox{\hyperlink{classelections_1_1_candidat_a70ff50db7731a9ffd8bc41d0f578fc44}{clone}} () const
+\begin{DoxyCompactList}\small\item\em Crée une copie (clone) de l\textquotesingle{}objet {\ttfamily \mbox{\hyperlink{classelections_1_1_candidat}{Candidat}}} actuel. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classelections_1_1_candidat_a60d55284408b846a211e297399cbdb9a}{req\+Personne\+Formate}} () const
+\begin{DoxyCompactList}\small\item\em methode qui formate et retourne une représentation textuelle complète d\textquotesingle{}un candidat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Prototype de la classe \mbox{\hyperlink{classelections_1_1_candidat}{Candidat}} qui represente les inforrmations liees au candidat dans un systeme de gestion de circonscriptions electorales. Elle herite de la classe \mbox{\hyperlink{classelections_1_1_personne}{Personne}} mais ajoute la fonctionnalite de l\textquotesingle{}affiliation politique. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classelections_1_1_candidat_a8bf9b6205279a9ec02eca2a59f6d24b1}\label{classelections_1_1_candidat_a8bf9b6205279a9ec02eca2a59f6d24b1}} 
+\index{elections::Candidat@{elections::Candidat}!Candidat@{Candidat}}
+\index{Candidat@{Candidat}!elections::Candidat@{elections::Candidat}}
+\doxysubsubsection{\texorpdfstring{Candidat()}{Candidat()}}
+{\footnotesize\ttfamily elections\+::\+Candidat\+::\+Candidat (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+nas,  }\item[{const std\+::string \&}]{p\+\_\+prenom,  }\item[{const std\+::string \&}]{p\+\_\+nom,  }\item[{const std\+::string \&}]{p\+\_\+adresse,  }\item[{const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}} \&}]{p\+\_\+date\+Naissance,  }\item[{int}]{p\+\_\+parti\+Politique }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec parametre. On construit un objet \mbox{\hyperlink{classelections_1_1_candidat}{Candidat}} à partir des valeurs passées en paramètres. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+nas,Le} & numero d\textquotesingle{}assurance sociale du candidat ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+prenom,le} & prenom du candidat \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+nom,le} & nom du candidat \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+adresse,l\textquotesingle{}adresse} & du candidat \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+date\+Naissance,la} & date de naissance du candidat \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+parti\+Politique,la} & parti politique a laquelle appartient le candidat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+parti\+Politique , doit etre valide par la fonction est\+Parti\+Valide 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Vérification de l\textquotesingle{}attribut m\+\_\+parti\+Politique s\textquotesingle{}il contient la parti politique courante 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Un objet \mbox{\hyperlink{classelections_1_1_candidat}{Candidat}} 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classelections_1_1_candidat_a70ff50db7731a9ffd8bc41d0f578fc44}\label{classelections_1_1_candidat_a70ff50db7731a9ffd8bc41d0f578fc44}} 
+\index{elections::Candidat@{elections::Candidat}!clone@{clone}}
+\index{clone@{clone}!elections::Candidat@{elections::Candidat}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classelections_1_1_personne}{Personne}} $>$ elections\+::\+Candidat\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Crée une copie (clone) de l\textquotesingle{}objet {\ttfamily \mbox{\hyperlink{classelections_1_1_candidat}{Candidat}}} actuel. 
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$\+Personne$>$ Un pointeur unique vers un nouvel objet {\ttfamily \mbox{\hyperlink{classelections_1_1_candidat}{Candidat}}} qui est une copie de l\textquotesingle{}objet actuel. Ce pointeur est géré automatiquement par {\ttfamily std\+::unique\+\_\+ptr}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classelections_1_1_personne}{elections\+::\+Personne}}.
+
+\mbox{\Hypertarget{classelections_1_1_candidat_a150b2e680fbea708f222e5e8bfd823e4}\label{classelections_1_1_candidat_a150b2e680fbea708f222e5e8bfd823e4}} 
+\index{elections::Candidat@{elections::Candidat}!reqPartiPolitique@{reqPartiPolitique}}
+\index{reqPartiPolitique@{reqPartiPolitique}!elections::Candidat@{elections::Candidat}}
+\doxysubsubsection{\texorpdfstring{reqPartiPolitique()}{reqPartiPolitique()}}
+{\footnotesize\ttfamily int elections\+::\+Candidat\+::req\+Parti\+Politique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode accesseur récupérant la parti politique du candidat. 
+
+\begin{DoxyReturn}{Returns}
+la parti politique 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classelections_1_1_candidat_a60d55284408b846a211e297399cbdb9a}\label{classelections_1_1_candidat_a60d55284408b846a211e297399cbdb9a}} 
+\index{elections::Candidat@{elections::Candidat}!reqPersonneFormate@{reqPersonneFormate}}
+\index{reqPersonneFormate@{reqPersonneFormate}!elections::Candidat@{elections::Candidat}}
+\doxysubsubsection{\texorpdfstring{reqPersonneFormate()}{reqPersonneFormate()}}
+{\footnotesize\ttfamily std\+::string elections\+::\+Candidat\+::req\+Personne\+Formate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+methode qui formate et retourne une représentation textuelle complète d\textquotesingle{}un candidat. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string Une chaîne de caractères contenant les informations formatées du candidat 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\+: Cette methode est une augmentation de la methode req\+Personne\+Format() de la classe \mbox{\hyperlink{classelections_1_1_personne}{Personne}} 
+\end{DoxyNote}
+
+
+Reimplemented from \mbox{\hyperlink{classelections_1_1_personne_a1ad30c9ff47334fbe8655c021f901f8e}{elections\+::\+Personne}}.
+
+\mbox{\Hypertarget{classelections_1_1_candidat_a8b7a1700d8d8ae8e5c80f9c25fff976f}\label{classelections_1_1_candidat_a8b7a1700d8d8ae8e5c80f9c25fff976f}} 
+\index{elections::Candidat@{elections::Candidat}!reqStringParti@{reqStringParti}}
+\index{reqStringParti@{reqStringParti}!elections::Candidat@{elections::Candidat}}
+\doxysubsubsection{\texorpdfstring{reqStringParti()}{reqStringParti()}}
+{\footnotesize\ttfamily std\+::string elections\+::\+Candidat\+::req\+String\+Parti (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Methode qui retourne le nom du parti politique du candidat sous forme de chaîne de caractères. Cette fonction utilise l\textquotesingle{}attribut {\ttfamily m\+\_\+parti\+Politique} pour déterminer le nom du parti auquel le candidat appartient et retourne la chaîne correspondante. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string La chaîne représentant le nom du parti politique du candidat. Si aucun parti valide n\textquotesingle{}est trouvé, retourne \char`\"{}\+Parti inconnu\char`\"{}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_candidat_8h}{Candidat.\+h}}\item 
+Candidat.\+cpp\end{DoxyCompactItemize}
